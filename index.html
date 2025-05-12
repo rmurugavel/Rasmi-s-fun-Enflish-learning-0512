@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun English Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/sunrise-1867275_1280.jpg" class="motivational-image" alt="Motivational" />
+    <div class="quote" id="quoteText">"Learning is a treasure that will follow its owner everywhere."</div>
+
+    <div class="theme-select">
+      <label for="theme">🎭 Choose Your Theme of the Day:</label>
+      <select id="theme" onchange="changeTheme()">
+        <option value="default">Motivation</option>
+        <option value="funny">Funny</option>
+        <option value="mystery">Mystery</option>
+        <option value="creative">Creative Writing</option>
+      </select>
+    </div>
+
+    <div class="task">
+      <div class="task-title">🎯 Daily Challenge</div>
+      <p id="dailyChallenge">Use the word <b>perseverance</b> in a sentence and record your voice reading it aloud!</p>
+      <button onclick="startRecording()">🎤 Start Recording</button>
+      <p id="recordingStatus"></p>
+    </div>
+
+    <div class="task" id="quizContainer">
+      <div class="task-title">💡 Quick Task</div>
+      <p id="quizQuestion"></p>
+      <select id="quickTask"></select>
+      <button onclick="checkQuickTask()">Submit Answer</button>
+      <p id="taskResult"></p>
+    </div>
+
+    <div class="task">
+      <div class="task-title">📚 Word Dictionary</div>
+      <input type="text" id="wordInput" placeholder="Enter a word..." />
+      <button onclick="lookupWord()">🔍 Look Up</button>
+      <div id="wordResult"></div>
+    </div>
+
+    <div class="progress-container">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+    <div id="levelDisplay" class="level">Level 1</div>
+    <div id="bonusChallenge" class="bonus">🎉 Bonus: Write a short poem using three new words!</div>
+
+    <button onclick="generateMeme()">😅 I Skipped Yesterday</button>
+    <div id="meme" class="meme"></div>
+    <div class="badge" id="badge"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

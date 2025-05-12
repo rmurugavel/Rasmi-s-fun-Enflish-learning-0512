@@ -1,0 +1,95 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f8ff;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+.container {
+  max-width: 480px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.motivational-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.quote {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  color: #1e90ff;
+  margin-bottom: 20px;
+}
+.task, .meme {
+  margin: 15px 0;
+  background: #e6f7ff;
+  padding: 12px;
+  border-radius: 10px;
+}
+.task-title {
+  font-weight: bold;
+}
+.badge {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+button {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+select, input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.progress-container {
+  margin-top: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+}
+.progress-bar {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+.level {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+.bonus {
+  margin-top: 10px;
+  padding: 10px;
+  background: #fff7cc;
+  border-radius: 8px;
+  display: none;
+}
+.theme-select {
+  margin-top: 20px;
+  padding: 10px;
+  background: #fff0f5;
+  border-radius: 8px;
+  text-align: center;
+}
